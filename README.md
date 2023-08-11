@@ -16,7 +16,7 @@ The invariants for each contract are defined in separate test files:
 
 ## Running `medusa`
 
-First, install `medusa` by following the installation instructions [here](https://github.com/crytic/medusa#installation).
+First, follow the instructions stated [here](/secureum-workshop.md#before-starting) to setup `medusa` and `solc`.
 
 To start fuzzing, run the following command:
 
