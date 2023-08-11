@@ -2,8 +2,8 @@
 pragma solidity 0.8.19;
 
 import {FixedPointMathLib} from "contracts/FixedPointMathLib.sol";
-import {FixedPointMathLibWrapper} from "./FixedPointMathLibWrapper.sol";
-import {TestHelper} from "./TestHelper.sol";
+import {TestHelper} from "./helper/TestHelper.sol";
+import {FixedPointMathLibWrapper} from "./wrapper/FixedPointMathLibWrapper.sol";
 
 contract FixedPointMathLibTest is TestHelper {
     // FixedPointMathLib wrapper contract
@@ -13,7 +13,6 @@ contract FixedPointMathLibTest is TestHelper {
     uint256 constant SQRT_UINT256_MAX = 340282366920938463463374607431768211455;
 
     constructor() {
-        // Deploy wrapper contract
         fixedPointMathLibWrapper = new FixedPointMathLibWrapper();
     }
 

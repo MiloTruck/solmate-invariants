@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 
-import {PropertiesAsserts} from "contracts/helper.sol";
+import {PropertiesAsserts} from "./helper.sol";
 
 contract TestHelper is PropertiesAsserts {
     function failWithMsg(string memory reason) internal {

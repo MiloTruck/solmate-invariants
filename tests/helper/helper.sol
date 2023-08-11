@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 // From https://github.com/crytic/properties/blob/main/contracts/util/PropertiesHelper.sol
 

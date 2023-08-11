@@ -2,7 +2,7 @@
 pragma solidity 0.8.19;
 
 import {ERC20Burn} from "contracts/ERC20Burn.sol";
-import {AddressSet, LibAddressSet} from "./AddressSet.sol";
+import {AddressSet, LibAddressSet} from "tests/helper/AddressSet.sol";
 
 contract ERC20BurnWrapper is ERC20Burn {
     using LibAddressSet for AddressSet;

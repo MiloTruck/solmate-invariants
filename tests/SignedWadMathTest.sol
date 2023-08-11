@@ -2,15 +2,14 @@
 pragma solidity 0.8.19;
 
 import {SignedWadMath} from "contracts/SignedWadMath.sol";
-import {SignedWadMathWrapper} from "./SignedWadMathWrapper.sol";
-import {TestHelper} from "./TestHelper.sol";
+import {TestHelper} from "./helper/TestHelper.sol";
+import {SignedWadMathWrapper} from "./wrapper/SignedWadMathWrapper.sol";
 
 contract SignedWadMathTest is TestHelper {
     // SignedWadMath wrapper contract
     SignedWadMathWrapper signedWadMathWrapper;
 
     constructor() {
-        // Deploy wrapper contract
         signedWadMathWrapper = new SignedWadMathWrapper();
     }
 

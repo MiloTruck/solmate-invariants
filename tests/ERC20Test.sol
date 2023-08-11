@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 
-import {IVM} from "contracts/IVM.sol";
-import {ERC20BurnWrapper} from "./ERC20BurnWrapper.sol";
-import {TestHelper} from "./TestHelper.sol";
+import {IVM} from "./helper/IVM.sol";
+import {TestHelper} from "./helper/TestHelper.sol";
+import {ERC20BurnWrapper} from "./wrapper/ERC20BurnWrapper.sol";
 
 contract ERC20Test is TestHelper {
     // Cheatcodes
