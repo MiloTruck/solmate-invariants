@@ -28,7 +28,7 @@ medusa fuzz --target tests/submission.sol --deployment-order ERC20Test,FixedPoin
 
 During the workshop, an edge case was discovered in the [`wadMul()`](https://github.com/transmissions11/solmate/blob/bfc9c25865a274a7827fea5abf6e4fb64fc64e6c/src/utils/SignedWadMath.sol#L58-L72) function of solmate's `SignedWadMath` library. Specific details of the bug can be found [here](https://github.com/transmissions11/solmate/pull/380).
 
-The invariant that found the bug can be found in [`SolmateBugTest.sol`](/tests/SolmateBugTest.sol). To run the test, use the following command:
+The invariant that found the bug is in [`SolmateBugTest.sol`](/tests/SolmateBugTest.sol). To run the test, use the following command:
 
 ```bash
 medusa fuzz --target tests/SolmateBugTest.sol  --deployment-order SolmateBugTest
